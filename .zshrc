@@ -117,9 +117,12 @@ alias a="php artisan"
 alias tinker="php artisan tinker"
 alias mfs="php artisan migrate:fresh --seed"
 alias phpunit="vendor/bin/phpunit"
-alias pest="vendort/bin/pest"
+alias pest="vendor/bin/pest"
 alias vapor="vendor/bin/vapor"
 alias pat='php artisan test'
+alias larastan='./vendor/bin/phpstan analyse --memory-limit 268435456'
+alias pint='./vendor/bin/pint'
+alias mfs='php artisan migrate:fresh --seed'
 
 # Git
 alias nah="git reset --hard && git clean -df"
@@ -149,3 +152,4 @@ alias mysql="/usr/local/mysql/bin/mysql"
 
 # fnm
 eval "$(fnm env)"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
