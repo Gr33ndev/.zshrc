@@ -130,7 +130,7 @@ alias gs="git status"
 alias ga="git add -A"
 alias gc="git commit"
 alias gca="git commit --amend"
-alias gp="git push origin master"
+alias gp="git push"
 alias gpf="git push --force"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
