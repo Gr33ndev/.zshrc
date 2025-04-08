@@ -129,7 +129,9 @@ alias nah="git reset --hard && git clean -df"
 alias gs="git status"
 alias ga="git add -A"
 alias gc="git commit"
+alias gca="git commit --amend"
 alias gp="git push origin master"
+alias gpf="git push --force"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # Composer
@@ -140,6 +142,13 @@ alias cu="composer update"
 alias o="open ."
 alias storm="phpstorm ."
 
+# Commandline
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ll="eza -lah --group-directories-first"
+alias ls="eza"
+
 # ctags
 alias ctags="`brew --prefix`/bin/ctags"
 
@@ -147,9 +156,14 @@ alias ctags="`brew --prefix`/bin/ctags"
 alias gitvimrc="cp ~/.vimrc ~/vimrc-repo/.vimrc && cp ~/.vim/plugins.vim ~/vimrc-repo/.vim/plugins.vim"
 alias gitzshrc="cp ~/.zshrc ~/zshrc-repo/.zshrc"
 alias mysql="/usr/local/mysql/bin/mysql"
+alias chromatic="npx chromatic --project-token=chpt_5414f32a95b6911"
+alias storybook="npm run storybook"
 
 # END Aliases
 
 # fnm
 eval "$(fnm env)"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
